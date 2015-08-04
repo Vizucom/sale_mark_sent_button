@@ -6,9 +6,9 @@
             <field name="model">sale.order</field>
             <field name="inherit_id" ref="sale.view_order_form"/>
 			<field name="arch" type="xml">
-				<field name="action_quotation_send" position="before">
+				<button name="action_quotation_send" position="before">
 					<button string="Mark as Sent" type="workflow" name="quotation_sent" states="draft" class="oe_highlight"/> 
-				</field>
+				</button>
             </field>
         </record>
     </data>
